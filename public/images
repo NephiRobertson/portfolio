@@ -1,0 +1,21 @@
+import Image from 'next/image'
+
+export default function About() {
+  return (
+    <main className="max-w-3xl mx-auto px-6 py-16 text-gray-900 dark:text-white">
+      <div className="text-center mb-12">
+        <Image
+          src="/images/nephi.jpg" // 👈 Must match your file path exactly
+          alt="Nephi Robertson"
+          width={300}
+          height={400}
+          className="rounded-lg object-cover mx-auto shadow-md"
+        />
+        <h1 className="text-3xl font-bold mt-6">About Me</h1>
+        <p className="mt-4 text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
+          I’m a software engineer focused on meaningful design, elegant code, and lasting impact.
+        </p>
+      </div>
+    </main>
+  )
+}
